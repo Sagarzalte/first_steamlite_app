@@ -102,7 +102,19 @@ if streamlit.button('Add a Fruit to the List'):
 
 #add a button to load the fruit
 
-if streamlit.button('Get Fruit Load List'):
+'''if streamlit.button('Get Fruit Load List'):
+
+  my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+
+  my_data_rows = get_fruit_load_list()
+
+  my_cnx.close()
+
+  streamlit.dataframe(my_data_rows)'''
+ 
+
+title_name = streamlit.header('View Our Fruit List - Add our Favorites')
+if streamlit.button('Get Fruit List'):
 
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 
@@ -111,8 +123,4 @@ if streamlit.button('Get Fruit Load List'):
   my_cnx.close()
 
   streamlit.dataframe(my_data_rows)
- 
-
-title_name = streamlit.header('View Our Fruit List - Add our Favorites')
-streamlit.button('Get Fruit List')
 
