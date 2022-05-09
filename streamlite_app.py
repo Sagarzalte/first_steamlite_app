@@ -100,7 +100,7 @@ if streamlit.button('Add a Fruit to the List'):
 
 
 
-'''#add a button to load the fruit
+#add a button to load the fruit
 
 if streamlit.button('Get Fruit Load List'):
 
@@ -111,7 +111,8 @@ if streamlit.button('Get Fruit Load List'):
   my_cnx.close()
 
   streamlit.dataframe(my_data_rows)
-  
-if streamlit.button('Get Fruit Load List'):'''
+ 
 
+title_name = streamlit.header('View Our Fruit List - Add our Favorites')
+streamlit.button('Get Fruit List'):
 
