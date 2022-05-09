@@ -62,7 +62,7 @@ try:
     streamlit.error("Please select fruit to get information")
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
-    steamlit.dataframe(back_from_function) 
+    streamlit.dataframe(back_from_function) 
 except Exception as e:
   streamlit.error()
 
