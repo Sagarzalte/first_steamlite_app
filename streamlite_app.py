@@ -62,8 +62,5 @@ try:
     streamlit.error("Please select fruit to get information")
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
-    steamlit.dataframe(back_from_function)
-    
-  
-                                      
+    steamlit.dataframe(back_from_function)           
     
