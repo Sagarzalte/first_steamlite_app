@@ -114,5 +114,5 @@ if streamlit.button('Get Fruit Load List'):
  
 
 title_name = streamlit.header('View Our Fruit List - Add our Favorites')
-streamlit.button('Get Fruit List'):
+streamlit.button('Get Fruit List')
 
