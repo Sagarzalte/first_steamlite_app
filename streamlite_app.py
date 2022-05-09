@@ -30,8 +30,8 @@ my_data_row = my_cur.fetchone()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_row)
 
-fruit_choice = streamlit.text_input('What fruit would you like to add?','Kiwi')
-streamlit.write('Thanks for adding', fruit_choice)
+fruit_choice = streamlit.text_input('What fruit would you like to add?')
+
 my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
 my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
 streamlit.stop()
