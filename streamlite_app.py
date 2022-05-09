@@ -34,7 +34,7 @@ streamlit.text(my_data_row)
 
 my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
 my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.header('Fruityvice Fruit Advice!')
 try:
